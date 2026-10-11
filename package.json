@@ -1,0 +1,23 @@
+{
+  "name": "salonos-saas",
+  "version": "1.0.0",
+  "description": "SalonOS - Multi-Tenant Beauty Parlour & Salon Operating System",
+  "main": "server/src/server.js",
+  "scripts": {
+    "server": "node server/src/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "seed": "node server/src/seed.js"
+  },
+  "keywords": [
+    "salon-saas",
+    "beauty-parlour",
+    "multi-tenant",
+    "pos",
+    "whatsapp-automation",
+    "appointment-booking"
+  ],
+  "author": "SalonOS Team",
+  "license": "MIT"
+}
